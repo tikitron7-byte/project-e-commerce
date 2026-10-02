@@ -18,7 +18,7 @@
 .header {
   width: 100%;
   padding: 20px 50px;
-  background-color: #333;
+  background-color: #2e2e2e;
   display: flex;
   justify-content: space-between;
 }
@@ -50,11 +50,11 @@
   width: 100%;
   font-size: 25px;
   margin: 0 auto;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .products {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px;
@@ -65,16 +65,16 @@
   text-align: center;
 }
 .products__img {
-  width: 200px;
+  width: 250px;
   margin-bottom: 15px;
 }
 .products__title {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 .products__price {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
 }
 

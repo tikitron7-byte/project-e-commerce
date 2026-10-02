@@ -38,7 +38,7 @@ $unit: 15px;
 .header {
     width: $width1;
     padding: 20px 50px;
-    background-color: #333;
+    background-color: #2e2e2e;
     @include flexbox;
     @extend %item;
     &__logo {
@@ -73,13 +73,13 @@ $unit: 15px;
         width: $width1;
         font-size: 25px;  
         margin: 0 auto;
-        opacity: 0.7;
+        opacity: 0.6;
     }
 
 }
 
 .products {
-    width: 80%; 
+    width: 85%; 
     margin: 0 auto;
     box-sizing: border-box;
     padding: 20px; 
@@ -92,18 +92,18 @@ $unit: 15px;
     }
 
     &__img {
-        width: 200px;
+        width: 250px;
         margin-bottom: $unit;
     }
 
     &__title {
-        font-size: 17px;
+        font-size: 20px;
         font-weight: 500;
         margin-bottom: 5px;
     }
 
     &__price {
-        font-size: $unit;
+        font-size: 18px;
         font-weight: 300;
     }
 }
