@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/styles.css">
+    <script src="js/functions.js" defer></script>
     <title>Document</title> 
 </head>
 <body class="body">
     <header class="header">
-        <i><img class="header__icon"src="img/menu.png" alt="Icono Menú"></i> 
+        <i class="header__menu" id="btnMenu"><img class="header__icon" src="img/menu.png" alt="Icono Menú"></i>
         <img class="header__logo" src="img/logo.png" alt="Logo Adidas"> 
-        <i><img class="header__icon" src="img/carrito.png" alt="Icono Carrito"></i>
+        <i class="header__cart" id="btnCart">
+            <img class="header__icon" src="img/carrito.png" alt="Icono Carrito">
+            <span class="header__badge" id="cartBadge">3</span>
+        </i>
     </header>
 
     <main class="main">
@@ -27,18 +31,21 @@
                 <img class="products__img" src="img/jersey.jpg" alt="Jersey de la Selección Mexiacana">
                 <h3 class="products__title">Jersey México 2026</h3>
                 <p class="products__price">2,000.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
 
             <article class="products__item">
                 <img class="products__img" src="img/chamarra.jpg" alt="Chamarra Adidas Nuevo Modelo">
                 <h3 class="products__title">Sudadera Deportiva</h3>
                 <p class="products__price">1,000.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
 
             <article class="products__item">
                 <img class="products__img" src="img/tennis.jpg" alt="Tennis para Fútbol Adidas">
                 <h3 class="products__title">Multitaco XSpeedPortal.TF Rosas</h3>
                 <p class="products__price">2,500.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
         </section>
         <section class="products">
@@ -46,18 +53,21 @@
                 <img class="products__img" src="img/jersey.jpg" alt="Jersey de la Selección Mexiacana">
                 <h3 class="products__title">Jersey México 2026</h3>
                 <p class="products__price">2,000.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
 
             <article class="products__item">
                 <img class="products__img" src="img/chamarra.jpg" alt="Chamarra Adidas Nuevo Modelo">
                 <h3 class="products__title">Sudadera Deportiva</h3>
                 <p class="products__price">1,000.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
 
             <article class="products__item">
                 <img class="products__img" src="img/tennis.jpg" alt="Tennis para Fútbol Adidas">
                 <h3 class="products__title">Multitaco XSpeedPortal.TF Rosas</h3>
                 <p class="products__price">2,500.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
         </section>
         <section class="products">
@@ -65,22 +75,26 @@
                 <img class="products__img" src="img/jersey.jpg" alt="Jersey de la Selección Mexiacana">
                 <h3 class="products__title">Jersey México 2026</h3>
                 <p class="products__price">2,000.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
 
             <article class="products__item">
                 <img class="products__img" src="img/chamarra.jpg" alt="Chamarra Adidas Nuevo Modelo">
                 <h3 class="products__title">Sudadera Deportiva</h3>
                 <p class="products__price">1,000.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
 
             <article class="products__item">
                 <img class="products__img" src="img/tennis.jpg" alt="Tennis para Fútbol Adidas">
                 <h3 class="products__title">Multitaco XSpeedPortal.TF Rosas</h3>
                 <p class="products__price">2,500.00</p>
+                <button class="products__btn">Agregar al Carrito</button>
             </article>
         </section>
 
         <section class="car">
+            <button class="car__close" id="btnCloseCart">X</button>
             <h2 class="car__title">CARRITO</h2>
             <div class="car__item">
                 <img class="car__img" src="img/tennis.jpg" alt="Tennis para Fútbol Adidas">
@@ -102,5 +116,16 @@
             </div>
         </section>
     </main>
+    <aside class="side-menu" id="sideMenu">
+    <button class="side-menu__close" id="btnCloseMenu">X</button>
+    <h2 class="side-menu__title">MENÚ</h2>
+    <ul class="side-menu__list">
+        <li>Inicio</li>
+        <li>Hombre</li>
+        <li>Mujer</li>
+        <li>Niños</li>
+        <li>Ofertas</li>
+    </ul>
+</aside> 
 </body>
 </html>
